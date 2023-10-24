@@ -1,0 +1,35 @@
+Application Development and Packaging Using Python
+
+
+1. Application development lifecycle phases
+    i. Requirement Gathering Phase - 
+        - user requirements
+        - business requirements 
+        - technical requirements 
+        - note constraints.
+    ii. Analysis and design phases
+        - Once the Requirements are in -> Analyse, Verify, Revise -> Design, Verify, Revise -> Design Document.
+    iii. Code and test phases
+        - Design Document -> Coding -> Testing <-> Revise -> Tested Programs (meeting documented requirements).
+        Types of Testing:
+            a. Perform Unit Testing
+            b. User Testing
+            c. Performance
+            d. Integration tests
+            e. Validate test results.
+            --> Final Tested Programs.
+    iv. Production Phase
+        - Final Tested Programs --> Promote to Production --> Production Repository
+    v. Maintenance Phase
+        - Upgrade
+        - Add Features
+
+    
+    Best Practices:
+        i. Maintain Mupltiple files
+            - Requiremetns for functionalities vary
+            - code each functionality in a separate file
+                - makes code maintenance efficient and easy. 
+                - helps when new functionality is added.
+
+    
