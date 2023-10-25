@@ -1,0 +1,57 @@
+What is a web app?
+    - Stored on a remote server
+    - Delivered over the internet.
+    Three components:
+    1. Web server.
+    2. App server
+    3. Database
+
+    Common programming Languages:
+        Front-end:
+            - JavaScript
+            - HTML
+            - CSS
+        Back-end:
+            - Python
+            - Java
+            - Ruby
+
+Advantages of web apps (over local apps)
+    - Version uniformity (same version is available to mulitple users at the same time)
+    - Hardware platform flexibility
+    - Web browser Flexibility
+    - No local installation
+
+What is an API?
+    - Software componenet that enables apps to communicate
+    - Featuers
+        - Increased Flexibility
+        - Standardized rules and functions
+
+    API example:
+    - Weather App 
+        App requests information through a Weather API.
+        The API gets data from the weather data store.
+        The app then works on that data to forecast the weather.
+    
+
+API Architectures
+    1. Representation State transfer (REST)
+    2. Simple Object Access Protocol (SOAP)
+
+Advantages of APIs
+    - Increased connectivity
+    - Supports CRUD actions.
+    - Works with PUT, POST, DELETE, and GET.
+    - Customizable
+
+APIs vs web apps
+    Web Apps
+    Form of API that communicates between the front and back end.
+        - Share Data with other apps.
+        - All Web Apps are APIs
+    API
+        Generic term given to apps that create a link between two parts of a system.
+        - Includes both "online" or web-based and "offline" apps.
+        - Not all APIs are web apps.
+
