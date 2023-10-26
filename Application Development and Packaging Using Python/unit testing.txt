@@ -1,0 +1,7 @@
+- We can use the unittest library for unit testing (or pytest)
+
+Unit Test Process: 
+    - Unit test code blocks locally.
+    - Once passed test the unit test on server environment (CI/CD)
+    - Once the server test is passed, it will be merged into the final codebase.
+

@@ -1,0 +1,38 @@
+Module vs Package vs Library
+    Modules
+        - A .py file containing Python definitions, statements, functions, and classes.
+        - Can import a module to other scripts and notebooks. 
+
+    Package
+        - A collection of python modules into a dictionary with a __init__.py
+        - Difference between package and module is only at the file system level.
+
+    Library
+        - A collection of packages or can be a single package.
+        - Examples:
+            - Numpy, Pytorch, Pandas, etc.
+        - Package and library are often used interchageably.
+
+
+Creating a Package
+    - For modules 1 to n, you should have a __init__.py with
+        [from . import module 1
+         from . import module 2
+         ...
+         from . import module n]
+
+    - Verify the package: 
+        - Open a bash terminal and navigate to you project directory.
+        - run 'python' on the command shell to open the python interpreter.
+        - run the import {mypackage} command to see if it runs without error.
+    
+    General structure of package: {package_name}.{module_name}.{function_name}(parameters)
+
+
+Using the Package
+    - import commands on python.
+
+
+        
+
+    

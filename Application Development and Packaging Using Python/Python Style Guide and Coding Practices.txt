@@ -1,0 +1,25 @@
+Python Conventions:
+    - PEP8 (Python Enhancement Proposal 8)
+        - Using spaces for indentation (rather than tabs as these differ between IDEs)
+        - Guideline is to use four spaces for indentation.
+        - Use blank lines to separate functions and classes.
+        - Use spaces around operators and commas.
+        - Using functions for blocks of codes.
+        - Naming convention wiht lowercase with underscores (snake_case).
+        - for packages however, do not use underscores.
+        - CamelCase used for classes (helps distinguish them with functions).
+        - For constants, capitalize all words and separate the words with underscores, e.g. MAX_FILE_UPLOAD_SIZE as opposed to max_file_upload_size.
+
+    - Static code analysis
+        - Commonly used to manage compliance.
+        - Evaluates style compliance wihtout executing the code.
+        - find issus such as:
+            - Programming errors.
+            - Coding standard violations.
+            - Undefined vlaues
+            - syntax violations
+            - Security vulnerabilities.
+        - Use PyLint to check the Python code compliance with PEP8 guidelines.
+    
+    
+
