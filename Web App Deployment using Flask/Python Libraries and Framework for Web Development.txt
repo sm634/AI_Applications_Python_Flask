@@ -1,0 +1,23 @@
+Python libraries for app dev:
+    - Requests sends HTTP requests.
+    - BeautifulSoup scrapes web pages.
+    - SQLAlchemy is a SQL toolkit.
+    - PyTest is a testing framework.
+
+What is a Framework?
+    - Predefined structures for application development.
+    - Provides a set of guidelines for application development.
+    - Examples: Django, Flask, Web2Py.
+
+Benefits of using Framework:
+    - Eases the development process
+    - Simplifies the debugging process.
+    - Enables more functionality with less code.
+    - Improves database management efficeincy.
+    - Helps enforce security.
+
+Difference between frameworks and libraies:
+    - Code Calls libraries
+    - Framework calls code
+        Frameworks can contain libraries.
+

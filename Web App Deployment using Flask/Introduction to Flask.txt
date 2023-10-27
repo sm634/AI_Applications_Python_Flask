@@ -1,0 +1,49 @@
+Flask Framework: 
+    - Flask is a micro web framework (not dependent on a big set of tools).
+    - Flask 2.2.2 runs on Python 3.7 and newer.
+    - Comes with a minimal set of dependencies.
+    - Community-maintained extensions.
+
+Main features:
+    - Built-in web server.
+    - Has a debugger.
+    - Uses standard Python logging.
+    - Has built-in unit testing (enable TDD).
+    - Enables request and response classes.
+
+Additional features:
+    - Provides static asset support (CSS, Javascript and images)
+    - Provides dynamic templates (Jinga used to create dynamic template per request)
+    - Supports routing: 
+        - Dynamic URLs
+        - HTTP Methods
+        - Redirecting 
+    - Enables error handling
+    - Supports sessions.
+
+Popular Estensions:
+    - Flask-SQLAlchemy (adds support for ORM)
+    - Flask-Mail (set up an SMTP mail server)
+    - Flask-Admin (Add admin interfaces to Flask easily)
+    - Flask-Uploads (add customized file uploadings)
+    - Flask-CORS (handle cross-origin resource sharing from Javascript)
+    - Flask-Migrate (database migrations to SQLAlchemy ORM)
+    - Flask-User (adds user authentication and authorization)
+    - Marshmellow (adds extensive object serialization and deserialization to your code)
+    - Celery (Task queue for multi-storage programs and schedules)
+
+Flask built-in dependencies:
+    - Wekzeug: Implements server
+    - Jinja: Template language
+    - MarkupSafe: Provides security features in templates.
+    - ItsDangerous: Signing library for session cookies.
+    - Click: Helps write command line interfaces for Flask.
+
+- Use pip freeze to see the dependencies (all packages involved)
+
+Differences between Flask and Django:
+- Flask: Minimal lightweight Framework, includes basic dependencies and is enstensible, flexible and lets the developer take most decisions. 
+- Django: Full-stack framework, Includes everything to create a full-stack application, opinionated and makes most decisions. 
+
+
+
