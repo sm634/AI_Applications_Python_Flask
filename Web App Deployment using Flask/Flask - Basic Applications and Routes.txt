@@ -1,0 +1,57 @@
+Adding Routes
+    - Use the @app decorator to define the method.
+    - Pass the URL path. 
+    - Return HTML from the method. 
+
+Running Flask
+    - Export settings
+        - FLASK_APP
+        - FLASK_ENV
+    
+    ```export FLASK_APP=app.py
+       export FLASK_ENV=development```
+
+    ```flask run``` to run the application.
+
+    To run without environment variables:
+        - ```flask --app app --debug run```
+
+Returning a Json
+    - Return a serializable type.
+    - Use the jsonify() method.
+        - pass in key-value pairs.
+
+
+Application Configuration
+    - ENV 
+    - DEBUG 
+    - TESTING 
+    - SECRET_KEY 
+    - SESSION_COOKIE_NAME
+    - SERVER_NAME
+    - JSONIFY_MIMETYPE
+
+Loading Application Configuration
+    - Flask provides a config object that acts like a dictionary
+        ```app.config['SECRET_KEY'] = "random-secret-key"```
+
+    - Configure from an Environment Variable. 
+        ```app.config["VARIABLE_NAME"]
+           app.config.from_prefixed_env()```
+
+    - Configure from a python file.
+        ```app.config.from_file("pathtoconfigfile")
+    
+
+Application Structure
+    - Main application Python module.
+    - Configuration file.
+    - Static files folder.
+    - Templates folder.
+    - Testing folder.
+    - Virtual environment.
+
+    See page for reference: https://flask.palletsprojects.com/en/2.3.x/tutorial/layout/
+    
+        
+

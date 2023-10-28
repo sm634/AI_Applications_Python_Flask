@@ -1,0 +1,94 @@
+Custom Routes
+    - @app.route("/path") decorator defaults to the GET method.
+    - Use methods arguments to only allow specific HTTP methods.
+    The following two methods are the same but one is implicit and one is explicit in specifying the GET method: 
+        
+        ```
+        @app.route("/health")
+        def health():
+            return jsonify(dict(status="OK")), 200
+
+        @app.route("/health", methods=["GET"])
+        def health():
+            return jsonify(dict(status="OK")), 200
+        ```
+
+Request Object: Attributes
+    - All HTTP calls to Flask contain the request object created from the Flask.Request class.
+    
+    Some common request attributes are: 
+        - server
+        - headers
+        - URL
+        - access_route
+        - full_path
+        - is_secure
+        - is_JSON
+        - cookies
+
+    The header contains the following data: 
+        - Cache-Control (how to cache the content in the browser)
+        - Accept (indicates content type that is understood by the client)
+        - Accept-Encoding (indicates the code content)
+        - User-Agent (identifies the client application, OS and version)
+        - Accept-language (request langauge)
+        - Host (host and port number of the requesting server)
+
+Request Object: Methods
+    Some common methods are: 
+
+        - get_data: Get POST data from the request as bytes.
+        - get_JSON: Parses POST data from the request as JSON. 
+
+Request Object: Parse Request Data
+    
+    There are multiple ways to parse data depending on what is coming in with a request: 
+        - args: MultiDict[str, str]
+        - JSON: Optional[Any]
+        - files: ImmutableMultiDict[str, FileStorage]
+        - form: ImmutableMultiDict[str, str]
+        - values: CombinedMultiDict[str, str]
+
+Request Object: Access values
+
+    You can get values from MultiDict, ImmutableMultiDict, and CombinedMultiDict as you would from a Python
+    dictionary using indexing or the GET method.
+
+    Example URL: http://localhost:5000?course=capstone&rating=10
+    
+    ```
+    from flask import Flask, request
+    app = Flask(__name__)
+
+    @app.route('/')
+    def hello_world():
+        course = request.args["course"]  #gets the value associated with 'course' in the example url. 
+        rating = request.args.get("rating")  #gets the value assocaited with rating in the example url.
+        return {"message": f"{course} with rating {rating}"}
+    ```
+
+Response Object: Attributes
+
+    - When a client calls a URL, it expects a response back. Flask has an in-built response class you can leverage.
+
+    Some common response attributes: 
+        - status_code
+        - headers 
+        - content_type
+        - content_length
+        - content_encoding
+        - mimetype 
+        - expires
+
+    Some common methods of response objects: 
+        - set_cookie
+        - delete_cookie
+
+Response Object: Usage
+
+    - Success response from @app.route method
+    - jsonify method 
+    - make_response method
+    - redirect response 
+    - abort method
+    
