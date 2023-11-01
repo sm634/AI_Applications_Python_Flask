@@ -1,0 +1,36 @@
+HTTP return status
+    - Every response contains a three-digit integer status code.
+    - Valid responses range from 100 to 599.
+
+    Code: 
+        1xx - informational
+        2xx - successful
+        3xx - Redirection
+        4xx - Client error
+        5xx - Server error
+    
+Returning status code: implicit
+    - Flask automatically retursn 200 by default when a string or dict is returned.
+    - 200 also returned when jsonify() method is used.
+
+Returning status code: explicit
+    - Return tuple with response as first value and status as the second value.
+    - Use the make_response() method.
+
+Code Description
+    200 - Request successful.
+    201 - New resource created.
+    202 - Request accepted, in process.
+    204 - Request completed, no response.
+    400 - Invalid request.
+
+    401 - Credentials missing or invalid.
+    403 - Credentials not sufficient.
+    404 - Resource not found.
+    405 - Operation not supported. 
+    500 - Unexpected server error.
+
+Running error code
+    - The application needs to return the appropriate code.
+
+    

@@ -1,0 +1,22 @@
+Calling external APIs
+    - Can call external APIs using the python requests library.
+    - Return JSON as a dictionary to the caller. 
+
+Dynamic route parameters
+    - RESTful API requires resource ID in the URL.
+        - Provide an API that looks up a book by its ISBN
+        - Example GET URL: http://localhost/book/1449355730
+    - Dynamic routing
+        See 'Dynamic routing with ISBM section in the module code app.py'.
+        - Parameter types validate requests
+        @app.route("terminals/{string:airport_code>}")
+        @app.route("/book/<int:isbn>")
+
+    - UUID Example:
+        Contains specfiic example about the network.
+        - Example: http://localhost:5000/network/2469c377-06db-4047-af16-bbac1e76c53f
+
+    
+- A REQUEST OBJECT can be parsed to get query parameters, body, and other arguments.
+- You can set the status on Response Objects before sending a response back ot the client.
+- You can use dynamic routes to create RESTful endpoints.
