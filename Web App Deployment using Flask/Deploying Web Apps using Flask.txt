@@ -1,0 +1,22 @@
+What is Flask?
+    - A microframe for creating web applications.
+    - Supports CRUD.
+        - Create <-> Post/Put
+        - Read <-> Get
+        - Update <-> Update
+        - Delete <-> Delete
+
+Creating a Web Application 
+    - Pip install flask.
+    - Import Flask
+    - Instantiate Flask 
+    - Run app. 
+
+Running an Application 
+- Start the server 
+- Check the end-point 
+
+Redering templates with Flask 
+- Serve static HTML pages.
+- Serve dynamic HTML pages. 
+- Passing arguments.
